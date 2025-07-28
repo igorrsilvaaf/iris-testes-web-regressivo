@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="11.910" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-07-24T01:13:17" tests="0" file="cypress/e2e/home.spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Home Page" timestamp="2025-07-24T01:13:17" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Validation of Home Page Elements" timestamp="2025-07-24T01:13:17" tests="2" time="11.899" failures="0">
+    <testcase name="Home Page Validation of Home Page Elements Home - Validate home" time="2.600" classname="Home - Validate home">
+    </testcase>
+    <testcase name="Home Page Validation of Home Page Elements Home - Login in home" time="9.004" classname="Home - Login in home">
+    </testcase>
+  </testsuite>
+</testsuites>

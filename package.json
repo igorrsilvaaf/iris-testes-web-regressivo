@@ -1,0 +1,42 @@
+{
+  "name": "iris-produtividade-regressivo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:test": "cypress run --config video=false",
+    "test:desk": "cypress run --env enviroment=iris-desk",
+    "test:responsive": "cypress run --env enviroment=iris-responsive",
+    "cy:open:desk": "cypress open --env enviroment=iris-desk",
+    "cy:open:responsive": "cypress open --env enviroment=iris-responsive",
+    "cy:dash": "npx cypress run --record --key <record_key>",
+    "site-cb": "npx cypress open --env environment=cb-desk --browser electron --e2e",
+    "site-pf": "npx cypress open --env environment=pf-desk --browser electron --e2e",
+    "msite-cb": "npx cypress open --env environment=cb-msite --browser electron --e2e",
+    "msite-pf": "npx cypress open --env environment=pf-msite --browser electron --e2e",
+    "cy:tag": "npx cypress run --env environment=cb-desk --env grepTags=@smoke",
+    "zephyr:report": "npx run-func integraResultadoComZephyr.js integraResultadoComZephyr"
+  },
+  "keywords": [
+    "cypress",
+    "tests",
+    "mocha",
+    "github-actions",
+    "QAOPS"
+  ],
+  "devDependencies": {
+    "@cypress/grep": "^4.0.0",
+    "adm-zip": "^0.5.10",
+    "axios": "^1.6.0",
+    "cypress": "^14.5.3",
+    "cypress-mochawesome-reporter": "^3.0.0",
+    "cypress-real-events": "^1.0.0",
+    "eslint-plugin-cypress": "^2.0.0",
+    "form-data": "^4.0.0",
+    "mocha-junit-reporter": "^2.0.0",
+    "run-func": "^3.0.0"
+  },
+  "dependencies": {
+    "faker-br": "^0.4.1"
+  }
+}

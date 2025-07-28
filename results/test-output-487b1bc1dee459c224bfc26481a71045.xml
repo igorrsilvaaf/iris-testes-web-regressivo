@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="100.094" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-07-24T01:10:27" tests="0" file="cypress/e2e/home.spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Home Page" timestamp="2025-07-24T01:10:27" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Validation of Home Page Elements" timestamp="2025-07-24T01:10:27" tests="2" time="100.064" failures="1">
+    <testcase name="Home Page Validation of Home Page Elements Home - Validate home" time="3.461" classname="Home - Validate home">
+    </testcase>
+    <testcase name="Home Page Validation of Home Page Elements Home - Login in home" time="32.541" classname="Home - Login in home">
+      <failure message="Timed out retrying after 30000ms: Expected to find element: `undefined`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 30000ms: Expected to find element: `undefined`, but never found it.
+    at LoginPage.getClickInButtonLoginHome (webpack://iris-produtividade-regressivo/./cypress/support/login/loginPage.js:29:49)
+    at LoginPage.authenticateUser (webpack://iris-produtividade-regressivo/./cypress/support/login/loginPage.js:8:9)
+    at Context.eval (webpack://iris-produtividade-regressivo/./cypress/e2e/home.spec.cy.js:17:16)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

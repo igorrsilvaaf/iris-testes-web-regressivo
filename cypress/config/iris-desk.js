@@ -1,0 +1,23 @@
+module.exports = {
+  baseUrl: "https://v5-todoist-app.vercel.app/",
+  baseUrlLogin: "https://v5-todoist-app.vercel.app/login",
+  baseUrlRegister: "v5-todoist-app.vercel.app/register",
+  baseUrlPomodoro: "https://v5-todoist-app.vercel.app/app/pomodoro",
+  baseUrlProjects: "https://v5-todoist-app.vercel.app/app/projects",
+  baseUrlLabels: "https://v5-todoist-app.vercel.app/app/labels",
+  baseUrlMyProfile: "https://v5-todoist-app.vercel.app/app/profile",
+  baseUrlInbox: "https://v5-todoist-app.vercel.app/app/inbox",
+  baseUrlUpcoming: "https://v5-todoist-app.vercel.app/app/upcoming",
+  baseUrlComplete: "https://v5-todoist-app.vercel.app/app/completed",
+  baseUrlSettings: "https://v5-todoist-app.vercel.app/app/settings",
+  baseUrlChangelog: "https://v5-todoist-app.vercel.app/app/changelog",
+  baseUrlStorage: "https://v5-todoist-app.vercel.app/app/storage",
+  baseUrlReports: "https://v5-todoist-app.vercel.app/app/reports",
+  baseUrlCalendar: "https://v5-todoist-app.vercel.app/app/calendar",
+  env: {
+    aliase: "iris",
+  },
+  layout: "desktop",
+  viewportHeight: 768,
+  viewportWidth: 1440,
+};

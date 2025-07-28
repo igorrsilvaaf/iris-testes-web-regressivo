@@ -1,0 +1,15 @@
+{
+    "linters": {
+        "flake8": {
+            "args": ["--max-line-length=120"]
+        },
+        "eslint": {
+            "executable": "eslint"
+        }
+    },
+    "paths": {
+        "linux": [],
+        "osx": [],
+        "windows": []
+    }
+}
