@@ -12,11 +12,13 @@ let userPassword2 = users.password2;
 describe("Login Tests", () => {
   beforeEach(() => {
     cy.visit("/");
+    cy.clearCookies();
+    cy.clearLocalStorage();
   });
 
   context("Validation login in the home page", () => {
     it("Login - Usuário e senha correto", () => {
-      loginPage.validatePageLogin();
+      homePage.validateHome();
       loginPage.authenticateUser();
       loginPage.validateCorrectLogin();
     });
@@ -33,13 +35,12 @@ describe("Login Tests", () => {
       loginPage.validateErrorLogin();
     });
 
-    it.only("Login - Logout", () => {
+    it("Login - Logout", () => {
       loginPage.authenticateUser();
+      loginPage.validateCorrectLogin();
       loginPage.changeLogValidation();
       loginPage.clickInButtonLogout();
-      loginPage.validateCorrectLogin();
-      loginPage.clickInButtonLogout();
-      homePage.validateHome();
+      loginPage.validatePageLogin();
     });
   });
 });

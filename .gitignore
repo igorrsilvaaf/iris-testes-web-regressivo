@@ -2,3 +2,4 @@ fixtures/
 screenshots/
 results/
 .idea
+.env

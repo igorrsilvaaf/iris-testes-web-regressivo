@@ -61,6 +61,7 @@ class LoginPage {
   validateCorrectLogin() {
     cy.get(elements.getValidationSuccessLogin()).should("be.visible");
     cy.get(elements.getValidateField()).should("be.visible");
+    cy.wait(2000);
   }
 
   validateErrorLogin() {
@@ -71,8 +72,8 @@ class LoginPage {
    * Valida se está na página para iniciar o login.
    */
   validatePageLogin() {
-    cy.get(elementsHome.getTitle()).should("be.visible");
-    cy.get(elementsHome.getSubtitulo()).should("be.visible");
+    cy.get(elements.getValidateTitleLogin()).should("be.visible");
+    cy.get(elements.getValidateSubTitleLogin()).should("be.visible");
   }
 
   /*
@@ -97,22 +98,22 @@ class LoginPage {
    * Faz logout pelo menu
    */
   clickInButtonLogout() {
-    cy.wait(2000);
-    cy.get(elements.getClickInButtonMenu()).should("be.visible");
-    cy.get(elements.getClickInButtonLogout()).should("be.visible");
+    cy.get(elements.getClickInButtonMenu()).should("be.visible").click();
+    cy.get(elements.getClickInButtonLogout()).should("be.visible").click();
   }
 
   /*
    * Validade se a mensagem de changelog esta na tela
    */
   changeLogValidation() {
-    commonPage
-      .checkElementExist(elements.getValidateChangeLog())
-      .then((exist) => {
-        if (exist) {
-          cy.get(elements.getClickInButtonCloseChangelog()).click();
-        }
-      });
+    cy.wait(1000);
+    cy.get("body").then(($body) => {
+      if ($body.find(elements.getValidateChangeLog()).length) {
+        cy.get(elements.getClickInButtonCloseChangelog()).click({
+          force: true,
+        });
+      }
+    });
   }
 }
 

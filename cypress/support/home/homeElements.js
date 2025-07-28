@@ -11,44 +11,43 @@ export const elements = {
 
   createAccountButton: '[data-testid="landing-create-account-button"]',
   loginCtaButton: '[data-testid="landing-login-cta-button"]',
-}
+};
 
 class homeElements {
-
   getTitle() {
-    return elements.title
+    return elements.title;
   }
 
   getSubtitulo() {
-    return elements.subtitulo
+    return elements.subtitulo;
   }
 
   getLoginButton() {
-    return elements.loginButton
+    return elements.loginButton;
   }
 
   getRegisterButton() {
-    return elements.registerButton
+    return elements.registerButton;
   }
 
   get featuresTitulo() {
-    return elements.featuresTitulo
+    return elements.featuresTitulo;
   }
 
   get landingFeaturePomodoro() {
-    return elements.landingFeaturePomodoro
+    return elements.landingFeaturePomodoro;
   }
 
   get landingFeatureTask() {
-    return elements.landingFeatureTask
+    return elements.landingFeatureTask;
   }
 
   get createAccountButton() {
-    return elements.createAccountButton
+    return elements.createAccountButton;
   }
 
   get loginCtaButton() {
-    return elements.loginCtaButton
+    return elements.loginCtaButton;
   }
 }
 

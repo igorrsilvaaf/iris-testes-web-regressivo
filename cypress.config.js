@@ -27,7 +27,11 @@ module.exports = defineConfig({
       grepTags(config);
 
       on("before:browser:launch", (browser = {}, launchOptions) => {
-        launchOptions.args.push("--disable-gpu");
+        console.log("Navegador em uso:", browser.name);
+
+        if (browser.name === "chrome") {
+          launchOptions.args.push("--disable-gpu");
+        }
         return launchOptions;
       });
 

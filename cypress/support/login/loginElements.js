@@ -1,5 +1,6 @@
 export const loginElements = {
-  titleLogin: 'h1:contains("Bem-vindo de volta")',
+  titleLogin: '[data-testid="welcome-back-title"]',
+  subtituloLogin: '[data-testid="sign-in-subtitle"]',
 
   inputEmail: '[data-testid="login-email-input"]',
   inputPassword: '[data-testid="login-password-input"]',
@@ -12,16 +13,20 @@ export const loginElements = {
   toastSuccessLogin: '[data-testid="toast-login-success"]',
   toastErrorLogin: '[data-testid="toast-login-error"]',
 
-  imageMenu: '[data-testid="header-user-avatar-image"]',
+  imageMenu: '[data-testid="avatar-fallback"]',
   LogoutButton: '[data-testid="logout-menu-item"]',
 
   validateChangeLog: '[data-testid="dialog-content"]',
-  closeChangelogButton: '[data-testid="button"]',
+  closeChangelogButton: '[data-testid="dialog-footer"] > .gap-2',
 };
 
 class LoginElements {
   getValidateTitleLogin() {
     return loginElements.titleLogin;
+  }
+
+  getValidateSubTitleLogin() {
+    return loginElements.subtituloLogin;
   }
 
   getFillFieldUsername() {
