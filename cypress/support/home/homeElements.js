@@ -30,23 +30,23 @@ class homeElements {
     return elements.registerButton;
   }
 
-  get featuresTitulo() {
+  getfeaturesTitulo() {
     return elements.featuresTitulo;
   }
 
-  get landingFeaturePomodoro() {
+  getlandingFeaturePomodoro() {
     return elements.landingFeaturePomodoro;
   }
 
-  get landingFeatureTask() {
+  getlandingFeatureTask() {
     return elements.landingFeatureTask;
   }
 
-  get createAccountButton() {
+  getcreateAccountButton() {
     return elements.createAccountButton;
   }
 
-  get loginCtaButton() {
+  getloginCtaButton() {
     return elements.loginCtaButton;
   }
 }

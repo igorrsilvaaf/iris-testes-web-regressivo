@@ -15,7 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import "./commands";
-import "./commandsSession";
+//import "./commandsSession";
 import "./requests";
 import "cypress-real-events/support"; // simulacão de eventos reais
 
