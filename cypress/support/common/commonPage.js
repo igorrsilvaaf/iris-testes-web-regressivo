@@ -20,8 +20,17 @@ export class Commonpage {
         cy.log(`Não existe o elemento ${element}`);
         return cy.wrap(false);
       }
-    });
+    })
   }
+
+  checkElementAndlick(selector) {
+    cy.get('body').then(($body) => {
+      if ($body.find(selector).length) {
+        cy.get(selector).click();
+      }
+    })
+  }
+  
 }
 
 export const commonPage = new Commonpage();

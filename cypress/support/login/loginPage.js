@@ -11,6 +11,7 @@ class LoginPage {
     this.fillFieldUsername(username);
     this.getFillFieldPassword(password);
     this.clickInButtonLogin();
+    cy.wait(4000);
   }
 
   /**
@@ -94,7 +95,7 @@ class LoginPage {
     this.clickInButtonLogin();
   }
 
-  /*
+  /** 
    * Faz logout pelo menu
    */
   clickInButtonLogout() {
@@ -102,7 +103,7 @@ class LoginPage {
     cy.get(elements.getClickInButtonLogout()).should("be.visible").click();
   }
 
-  /*
+  /** 
    * Validade se a mensagem de changelog esta na tela
    */
   changeLogValidation() {
